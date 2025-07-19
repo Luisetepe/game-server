@@ -8,8 +8,8 @@ project(game-server VERSION 1.0)
 # =============================
 # Compiler Settings
 # =============================
-# Use C++17 standard (required, no compiler-specific extensions)
-set(CMAKE_CXX_STANDARD 17)
+# Use C++23 standard (required, no compiler-specific extensions)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 

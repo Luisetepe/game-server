@@ -9,9 +9,9 @@
             "request": "launch",
             "name": "Debug SDL Demo",
             "program": "${workspaceRoot}/build/release/game-server",
-            "args": [],
+            "args": ["server"],
             "cwd": "${workspaceRoot}/build/release",
-            // "preLaunchTask": "CMake Build (Debug)"
+            "preLaunchTask": "CMake Build (Debug)"
         },
     ]
 }

@@ -1,4 +1,0 @@
-[submodule "deps/GameNetworkingSockets"]
-	path = deps/GameNetworkingSockets
-	url = https://github.com/ValveSoftware/GameNetworkingSockets
-	shallow = true

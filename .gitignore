@@ -1,0 +1,12 @@
+# CMake build files
+build/
+CMakeUserPresets.json
+
+# IDE-specific files
+.idea/
+*.suo
+*.user
+
+# Other
+*.log
+.cache

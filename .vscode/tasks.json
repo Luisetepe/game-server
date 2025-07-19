@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake Configure (Debug)",
+            "type": "shell",
+            "command": "cmake --preset debug",
+            "problemMatcher": []
+        },
+        {
+            "label": "CMake Build (Debug)",
+            "type": "shell",
+            "command": "cmake --build --preset debug",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -15,10 +15,8 @@
 #include <string>
 #include <thread>
 
-#include <signal.h>
 #include <steam/isteamnetworkingutils.h>
 #include <steam/steamnetworkingsockets.h>
-#include <unistd.h>
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -35,7 +33,6 @@ SteamNetworkingMicroseconds g_logTimeZero;
 static void NukeProcess(int rc)
 {
     (void)rc; // Unused formal parameter
-    kill(getpid(), SIGKILL);
 }
 
 static void DebugOutput(ESteamNetworkingSocketsDebugOutputType eType, const char *pszMsg)

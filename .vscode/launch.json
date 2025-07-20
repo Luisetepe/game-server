@@ -8,9 +8,9 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug SDL Demo",
-            "program": "${workspaceRoot}/build/release/game-server",
+            "program": "${workspaceRoot}/build/Debug/game-server",
             "args": ["server"],
-            "cwd": "${workspaceRoot}/build/release",
+            "cwd": "${workspaceRoot}/build/Debug",
             "preLaunchTask": "CMake Build (Debug)"
         },
     ]

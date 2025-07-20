@@ -38,8 +38,5 @@
   "explorer.fileNesting.patterns": {
     "*.h": "${capture}.cpp",
     "*.hpp": "${capture}.cpp",
-  },
-  "git.ignoredRepositories": [
-
-  ]
+  }
 }

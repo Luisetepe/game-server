@@ -13,6 +13,17 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+# =============================
+# Set Architecture
+# =============================
+if(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64|AMD64")
+    set(ARCH_DIR "x86_64")
+elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64|arm64")
+    set(ARCH_DIR "aarch64")
+else()
+    message(FATAL_ERROR "Unsupported architecture: ${CMAKE_SYSTEM_PROCESSOR}")
+endif()
+
 set(PROJECT_TARGET_NAME game-server)
 
 # =============================
@@ -21,7 +32,7 @@ set(PROJECT_TARGET_NAME game-server)
 # Find the prebuilt GameNetworkingSockets library in the vendor directory
 find_library(GNS_LIB
     NAMES GameNetworkingSockets
-    PATHS "${CMAKE_SOURCE_DIR}/vendor/GameNetworkingSockets/bin"
+    PATHS "${CMAKE_SOURCE_DIR}/vendor/GameNetworkingSockets/bin/${ARCH_DIR}/"
     NO_DEFAULT_PATH
 )
 
